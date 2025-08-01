@@ -1,0 +1,76 @@
+.despesas-container {
+  padding: 20px 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: -50px auto;
+
+}
+
+.despesas-container h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.despesa-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+  background: #f9f9f9;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.despesa-form input,
+.despesa-form button {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1 1 180px;
+}
+
+.despesa-form button {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.despesa-form button:hover {
+  background-color: #2980b9;
+}
+
+.despesas-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.despesas-table th {
+  background-color: #1266f1;
+  color: #ffffff;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.despesas-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.despesas-table tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.despesas-table tr:nth-child(odd) {
+  background-color: #ffecec;
+}

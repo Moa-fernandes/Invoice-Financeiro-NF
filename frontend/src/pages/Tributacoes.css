@@ -1,0 +1,124 @@
+.tributacao-container {
+  max-width: 1200px;
+  margin: -30px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f9fc;
+}
+
+.tributacao-container h2,
+.tributacao-container h3.subtitulo {
+  text-align: center;
+  color: #2d3748;
+  margin-bottom: 24px;
+}
+
+.tributo-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: grid;
+  gap: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-bottom: 40px;
+}
+
+.tributo-form label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.tributo-form input,
+.tributo-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #fefefe;
+  width: 90%;
+  transition: border 0.2s ease;
+}
+
+.tributo-form input:focus,
+.tributo-form select:focus {
+  border-color: #276ef1;
+  outline: none;
+}
+
+.valor-estimado {
+  grid-column: span 2;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 8px;
+  color: #1a202c;
+}
+
+.tributo-form button {
+  padding: 1px 10px;
+  background-color: #276ef1;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: -300px;
+}
+
+.tributo-form button:hover {
+  background-color: #1747b2;
+}
+
+/* TABELA DE TRIBUTAÇÕES */
+
+.tabela-tributacoes {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  font-size: 14px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+}
+
+.tabela-tributacoes thead {
+  background-color: #276ef1;
+  color: white;
+}
+
+.tabela-tributacoes th,
+.tabela-tributacoes td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.tabela-tributacoes tbody tr:nth-child(even) {
+  background-color: #f8f9fc;
+}
+
+.tabela-tributacoes tbody tr:hover {
+  background-color: #eef3ff;
+  transition: background-color 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .tributo-form {
+    grid-template-columns: 1fr;
+  }
+
+  .valor-estimado,
+  .tributo-form button {
+    grid-column: span 1;
+  }
+
+  .tabela-tributacoes th,
+  .tabela-tributacoes td {
+    font-size: 13px;
+  }
+}

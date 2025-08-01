@@ -1,0 +1,110 @@
+.dividas-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', sans-serif;
+  margin: -50px auto;
+
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.divida-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+
+.divida-form input,
+.divida-form label,
+.divida-form button {
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.divida-form input[type="checkbox"] {
+  margin-right: 5px;
+  transform: scale(1.3);
+}
+
+.divida-form label {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.divida-form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.divida-form button:hover {
+  background-color: #388e3c;
+}
+
+.dividas-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.dividas-table th {
+  background-color: #1266f1;
+  color: #ffffff;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.dividas-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dividas-table tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.dividas-table tr:nth-child(odd) {
+  background-color: #ffecec;
+}
+
+.status-icon {
+  font-size: 18px;
+}
+
+.status-paid {
+  color: #2e7d32; /* verde escuro */
+}
+
+.status-unpaid {
+  color: #d32f2f; /* vermelho escuro */
+}
+
+@media (max-width: 768px) {
+  .divida-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .dividas-table th,
+  .dividas-table td {
+    font-size: 13px;
+  }
+}

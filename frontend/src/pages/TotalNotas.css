@@ -1,0 +1,67 @@
+.total-notas-container {
+  padding: 40px;
+  max-width: 1100px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  margin: -50px auto;
+
+}
+
+.total-notas-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+  color: #263238;
+}
+
+.tabela-total-notas {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgb(120, 118, 241);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.tabela-total-notas th {
+  background-color: primary;  
+  color: #ffffff;              
+  font-weight: bold;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.tabela-total-notas td {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+.tabela-total-notas tr:hover {
+  background-color: #f5f5f5;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.tabela-total-notas tr:last-child td {
+  border-bottom: none;
+}
+
+.mensagem-vazia {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding-top: 20px;
+  font-size: 1rem;
+}
+
+.btn-excel {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn-excel:hover {
+  transform: scale(1.1);
+}

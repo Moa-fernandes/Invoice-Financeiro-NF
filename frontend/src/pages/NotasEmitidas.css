@@ -1,0 +1,218 @@
+.tela-container {
+  max-width: 1200px;
+  margin: -50px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f9fc;
+}
+
+.tela-container h2,
+.tela-container h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+/* FORMULÁRIO DE NOTA */
+.nota-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.nota-form .campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.nota-form label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #444;
+  font-weight: 500;
+}
+
+.nota-form input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  transition: 0.3s ease;
+}
+
+.nota-form input:focus {
+  outline: none;
+  border-color: #276ef1;
+  box-shadow: 0 0 0 2px rgba(39, 110, 241, 0.2);
+}
+
+.nota-form button {
+  align-self: end;
+  height: 42px;
+  background-color: #276ef1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nota-form button:hover {
+  background-color: #1747b2;
+}
+
+/* TABELA */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+  background-color: #276ef1;
+  color: white;
+}
+
+th,
+td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+tbody tr:hover {
+  background-color: #f0f4ff;
+  transition: background-color 0.2s;
+}
+
+.status-quitada {
+  background-color: #e9fce9;
+  color: #207520;
+}
+
+.status-parcial {
+  background-color: #fff8e1;
+  color: #b38f00;
+}
+
+.status-pendente {
+  background-color: #ffe6e6;
+  color: #cc0000;
+}
+
+/* BOTÃO EXCEL */
+.btn-excel {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn-excel:hover {
+  transform: scale(1.1);
+}
+
+/* FORM DE GLOSA */
+.glosa-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  align-items: end;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.glosa-form select,
+.glosa-form input {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.glosa-form input:focus,
+.glosa-form select:focus {
+  border-color: #276ef1;
+  box-shadow: 0 0 0 2px rgba(39, 110, 241, 0.15);
+  outline: none;
+}
+
+.glosa-form button {
+  height: 42px;
+  background-color: #f59e0b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.glosa-form button:hover {
+  background-color: #d97706;
+}
+
+/* Botões de ação: Editar e Excluir */
+.btn-acao {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin: 0 2px;
+  transition: transform 0.1s;
+  vertical-align: middle;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.btn-acao[title="Editar"] {
+  color: #1976d2;
+}
+.btn-acao[title="Editar"]:hover {
+  background: #e3f2fd;
+  color: #125399;
+  transform: scale(1.2);
+}
+
+.btn-acao[title="Excluir"] {
+  color: #d32f2f;
+}
+.btn-acao[title="Excluir"]:hover {
+  background: #ffebee;
+  color: #990000;
+  transform: scale(1.2);
+}
+
+/* Excel Button (deixar padrão com action buttons) */
+.btn-excel {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+.btn-excel:hover {
+  background: #e8f5e9;
+  outline: 1px solid #2e7d32;
+}
+
+td:last-child {
+  text-align: center;
+  min-width: 75px;
+}
