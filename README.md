@@ -1,4 +1,4 @@
-# Recrinanceiro
+# Financeiro - NF
 
 
 O **Recrinanceiro** é um sistema completo para **gestão financeira de clínicas e consultórios**, com controle de **notas fiscais emitidas, recebimentos, glosas, tributações, despesas e dívidas/obrigações**. A solução prioriza automação, integrações, facilidade de uso e transparência financeira.
